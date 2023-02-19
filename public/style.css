@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Teko', sans-serif;
+    color: #0b1421;
+}
+body{
+    background-image: url("https://wallpaperaccess.com/full/2761378.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+
+main{
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    font-size: 2rem;
+    width: 100%;
+    justify-content: space-between;
+    top: 0;
+    flex-direction: column;
+}
+
+.navbar{
+    display: flex;
+    padding-right: 5%;
+}
+
+#name{
+    margin-left: 0;
+    padding-left: 1rem;
+}
+
+.menu{
+    padding-left: 5%;
+    text-align: end;
+    text-decoration: none;
+
+}
+
+#footer{
+    display: block;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: #57ba93;
+    font-size: 1.2em;
+    height: 4.9em;
+    border: solid;
+}
+
+#clickerTitle {
+    text-decoration: underline;
+}
+
+.icon{
+    padding-left: 1%;
+    height: 50px;
+}
+
+#mePic{
+    height : 20rem;
+    padding : 5%
+}
+
+#personalBio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5%;
+    align-items: center;
+    background-color: #57ba93;
+    border: solid;
+    font-size: 1.2em;
+}
+
+#aboutBttn{
+    text-decoration: underline;
+}
+
+#tagline{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 6em;
+    border: solid;
+    margin-right: 5%;
+    padding: 1%;
+    background-color: #57ba93;
+}
+#subheader{
+    background-color: #57ba93;
+    padding: 1%;
+    border: solid;
+    font-size: 2em;
+}
+p{
+    padding: 1%;
+}
+
+#topContent{
+    display: flex;
+    flex-direction: row;
+}
+
+#topLeft{
+    padding-left: 5%;
+}
+
+#footerMessage{
+    padding: 0;
+    margin: 0;
+}
+
+#portfolio{
+    background-color: #57ba93;
+    display: flex;
+    width: 75%;
+    top: auto;
+    flex-direction: column;
+    justify-content:space-between;
+    padding: 1%;
+    margin-bottom: 10%;
+    font-size: 1.2em;
+    border: solid;
+}
+.proj{
+    display: flex;
+    align-items: center;
+}
+
+#projOne{
+    flex-direction: row-reverse;
+}
+
+#projThree{
+    flex-direction: row-reverse;
+}
+
+#bananaPic{
+    height: auto;
+    width: 70%;
+}
+
+#aracdePic{
+    height: auto;
+    width: 70%;
+}
+
+#arcadeTitle{
+    text-decoration: underline;
+}

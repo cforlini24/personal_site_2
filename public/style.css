@@ -71,18 +71,24 @@ header{
 
 #mePic{
     height : 20rem;
-    padding : 5%
+    padding : 1%;
 }
 
 #personalBio{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 5%;
     align-items: center;
     background-color: #57ba93;
     border: solid;
     font-size: 1.2em;
+    width: 1000px;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+}
+
+#bioText{
+    width: 50%;
 }
 
 #aboutBttn{
@@ -93,7 +99,6 @@ header{
     font-family: 'Bebas Neue', cursive;
     font-size: 6em;
     border: solid;
-    margin-right: 5%;
     padding: 1%;
     background-color: #57ba93;
 }
@@ -108,12 +113,21 @@ p{
 }
 
 #topContent{
+    width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
 
 #topLeft{
-    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    flex-wrap: wrap;
 }
 
 #footerMessage{

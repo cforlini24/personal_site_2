@@ -8,13 +8,13 @@ body{
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
+    margin: 0;
 }
 
 
 main{
     height: 100%;
-    margin: 0 auto;
+    margin: 0;
     text-align: center;
     display: flex;
     align-items: center;
@@ -52,7 +52,7 @@ header{
     display: block;
     text-align: center;
     position: fixed;
-    width: 120%;
+    width: 100%;
     bottom: 0;
     background-color: #57ba93;
     font-size: 1.2em;
@@ -71,24 +71,31 @@ header{
 
 #mePic{
     height : 20rem;
-    padding : 1%;
 }
 
 #personalBio{
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     background-color: #57ba93;
     border: solid;
     font-size: 1.2em;
-    width: 1000px;
-    margin-bottom: 5%;
+    margin: 10%;
+    margin-top: 10% auto;
+}
+
+
+#bioContainer{
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+    align-items: center;
     flex-wrap: wrap;
 }
 
 #bioText{
-    width: 50%;
+    text-align: center;
+    width: 60%;
 }
 
 #aboutBttn{
@@ -113,12 +120,13 @@ p{
 }
 
 #topContent{
-    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    margin: 3%;
+    text-align: center;
 }
 
 #topLeft{
@@ -146,6 +154,8 @@ p{
     margin-bottom: 10%;
     font-size: 1.2em;
     border: solid;
+    margin: 10%;
+    text-align: center;
 }
 .proj{
     display: flex;
@@ -172,4 +182,26 @@ p{
 
 #arcadeTitle{
     text-decoration: underline;
+}
+
+nav{
+    background-color:#57ba93 ;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2em;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    padding: 1%;
+    border: solid;
+    margin-bottom: 5%;
+}
+
+
+
+#navButtons{
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+    flex-wrap: wrap ;
 }

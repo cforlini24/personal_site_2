@@ -1,22 +1,20 @@
 import { createRoot } from "react-dom/client"
-import Bio from "./components/Bio";
-import Footer from "./components/Footer";
-import Portfolio from "./components/Portfolio";
+import { BrowserRouter,Route,Routes } from "react-router-dom";
+
+import {Bio, Footer, Portfolio, Main, Navbar } from "./components";
 
 
 const App = () => {
     return (
-        <main>
-            <div id="topContent">
-                <div id="topLeft">
-                    <h2 id="tagline">Developer economist humanitarian</h2>
-                    <p id="subheader"> Looking to start a new career in tech and finance</p>
-                </div>
-                <Bio />
-            </div>
-            <Portfolio />
-            <Footer />
-        </main>
+    <BrowserRouter>
+        <Navbar />
+        <Routes>
+            <Route path="/" element={<Main />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/about-me" element={<Bio />} />
+        </Routes>
+        <Footer />
+    </BrowserRouter>
     )
 }
 

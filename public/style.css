@@ -151,13 +151,15 @@ p{
     flex-direction: column;
     justify-content:space-between;
     padding: 1%;
-    margin-bottom: 10%;
+    margin-bottom: 15%;
+    padding-bottom: 5%;
     font-size: 1.5em;
     border: solid;
     margin: 10%;
     text-align: center;
 }
 .proj{
+    padding: 3%;
     display: flex;
     align-items: center;
 }
@@ -182,6 +184,11 @@ p{
 
 #arcadeTitle{
     text-decoration: underline;
+}
+
+#puppyPic{
+    height: auto;
+    width: 75%;
 }
 
 nav{

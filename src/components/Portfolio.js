@@ -1,5 +1,6 @@
 import clickerImg from "../clickerSite.png"
 import aracdeImg from "../arcadeSite.png"
+import puppyImg from "../puppyPic.png";
 
 const Portfolio = () => {
     return(
@@ -18,6 +19,13 @@ const Portfolio = () => {
             <div id="arcadeText">
             <a href="https://chasesarcade.netlify.app"><h3 id="arcadeTitle">Tic-Tac-Toe</h3></a>
                 <p id="arcadePgraph">This simple children's game is much harder to code than I had thought. Using JavaScript and HTML, I created a two-player mode as well as a CPU player for single-player games. This CPU has a simple mode that picks a square at random and an advanced mode that tries to block the player from winning.  </p>
+            </div>
+        </section>
+        <section id="projThree" className = "proj">
+            <aside id="picThree" className="projPic"><a href="https://sensational-semifreddo-ffbfd6.netlify.app"><img id="puppyPic" src = {puppyImg}/></a></aside>
+            <div id="puppyText">
+            <a href="https://sensational-semifreddo-ffbfd6.netlify.app"><h3 id="puppyTitle">Puppy Bowl Roster</h3></a>
+                <p id="puppyPgraph">Using React and AJAX, I designed a website to display a roster for the Puppy Bowl. This is a Single-Page Application that uses APIs to fetch data. It also includes a search bar to filter through results.</p>
             </div>
         </section>
     </div>

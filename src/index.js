@@ -12,6 +12,7 @@ const App = () => {
             <Route path="/" element={<Main />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/about-me" element={<Bio />} />
+            <Route path="/*" render={() => <Main />}/>
         </Routes>
         <Footer />
     </BrowserRouter>

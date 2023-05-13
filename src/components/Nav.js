@@ -8,17 +8,21 @@ const Nav = () => {
 
     const navList = (
         <ul className="flex flex-col gap-2 mt-2 md:mt-0 md:flex md:flex-row md:mx-auto md:mb-0 md:items-center md:gap-6">
+            <Link to="/about-me" onClick={() => setOpenNav(false)} className="cursor-pointer">
             <Typography as="li" variant="small" className="p-1">
-                <Link to="/about-me" onClick={() => setOpenNav(false)}>About Me</Link>
+                About Me
             </Typography>
-            <Typography as="li" variant="small" className="p-1">
-                <Link to="/portfolio" onClick={() => setOpenNav(false)}>Portfolio</Link>
+            </Link>
+            <Link to="/portfolio" onClick={() => setOpenNav(false)} className="cursor-pointer">
+            <Typography as="li" variant="small" className="p-1" >
+                Portfolio
             </Typography>
+            </Link>
         </ul>
     )
 
     return( 
-    <Navbar className="text-white bg-blue bg-opacity-100 sticky inset-0 z-10 h-max max-w-full py-2 px-3 mx-auto lg:py-4" >
+    <Navbar className="text-white bg-blue bg-opacity-100 sticky inset-0 z-10 h-max max-w-full py-2 my-auto px-3 mx-auto lg:py-4" >
         <div className="container flex justify-between items-center mx-auto">
         <Link to="/" onClick={() => setOpenNav(false)}>
             <Typography className="cursor-pointer py-1" variant="h6">

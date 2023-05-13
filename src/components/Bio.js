@@ -4,7 +4,7 @@ import mePic from "../mePic.jpg"
 
 const Bio = () => {
     return (
-        <div className="flex h-96 items-center w-full justify-center container mt-40 md:mx-auto">
+        <div className="flex h-96 items-center w-full justify-center container mt-40 md:mx-auto mb-60">
             <Card className="bg-blue text-white slide-in-top w-96">
                 <CardHeader id= "bioContainer">
                     <img id= "mePic" src = {mePic}/>

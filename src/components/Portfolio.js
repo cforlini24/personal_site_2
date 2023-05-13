@@ -5,7 +5,7 @@ import { Card, CardBody, CardHeader, Typography } from "@material-tailwind/react
 
 const Portfolio = () => {
     return(
-    <div className="container w-full my-5 flex flex-col items-center md:mx-auto md:flex-row md:h-auto md:justify-around md:content-center md:py-40 md:flex-wrap md:overflow-hidden">
+    <div className="container w-full my-5 flex flex-col items-center md:mx-auto md:flex-row md:h-auto md:justify-around md:content-center md:py-40 md:flex-wrap md:overflow-hidden mb-60">
         <Card id="projThree" className = "my-5 w-96 slide-in-bottom md:w-1/4 md:h-96">
             <CardHeader id="picThree" className="projPic"><a href="https://sensational-semifreddo-ffbfd6.netlify.app"><img id="puppyPic" src = {puppyImg}/></a></CardHeader>
             <CardBody id="puppyText">

@@ -34,7 +34,7 @@ function Icon({ id, open }) {
     }
 
 const Resume = () => {
-    const [open, setOpen] = useState(1);
+    const [open, setOpen] = useState(0);
 
     const handleOpen = (value) => {
         setOpen(open === value ? 0 : value);
@@ -47,7 +47,7 @@ const Resume = () => {
             label: "Skills",
             value: "skills",
             element: <Fragment >
-                <Accordion className="w-72" open={open == 1} icon={<Icon id={1} open={open} />}>
+                <Accordion className="w-72 md:w-auto" open={open == 1} icon={<Icon id={1} open={open} />}>
                     <AccordionHeader onClick={() => handleOpen(1)} >
                         Proficient
                     </AccordionHeader>
@@ -89,7 +89,7 @@ const Resume = () => {
             label: "Education",
             value: "education",
             element: 
-            <div className="w-72">
+            <div className="w-72 md:flex md:justify-around md:w-full  md:h-full md:items-center">
                 <Card color="transparent" shadow={false} className=" text-center">
                     <CardHeader color="transparent"
         floated={false}
@@ -102,7 +102,7 @@ const Resume = () => {
                     </CardHeader>     
                     <CardBody className="mb-8 p-0">
                     Certificate of  Web Development<br/>
-                     Jan 2024 - April 2023
+                     Jan 2023 - April 2023
                     </CardBody>
                 </Card>
                 <Card color="transparent" shadow={false} className=" text-center">
@@ -125,7 +125,7 @@ const Resume = () => {
             label: "Experience",
             value: "experience",
             element: 
-            <Card className="w-72 mt-10">
+            <Card className="w-72 mt-10 md:w-auto">
                 <CardBody>
                     <Typography variant="h3" className="text-center">The Wing Cafe & Tap House</Typography>
                     <Typography variant='h5' className="text-center">Head Food Expeditor</Typography>
@@ -143,24 +143,24 @@ const Resume = () => {
     ]
 
     return(
-        <div className="flex items-center justify-center my-5">
-        <Tabs value="skills" orientation="vertical" className="hidden md:inline-block">
-            <TabsHeader className="items-center">
+        <div className="flex items-center justify-center my-5 md:my-20 " >
+        <Tabs value="skills" orientation="vertical" className="hidden md:flex md:m-5 md:justify-around w-screen scale-in-hor-center">
+            <TabsHeader className="items-center md:w-64 md:m-10">
                 {data.map(({ label, value }) => (
-                    <Tab key={value} value={value}>
+                    <Tab key={value} value={value} className="md:p-5">
                     {label}
                     </Tab>
                 ))}
             </TabsHeader>
             <TabsBody>
                 {data.map(({ value, element }) => (
-                    <TabPanel key={value} value={value} className="py-0">
+                    <TabPanel key={value} value={value} className="py-0 md:h-full md:flex md:flex-col">
                         {element}
                     </TabPanel>
                     ))}
             </TabsBody>
         </Tabs>
-        <Tabs value="skills" className=" md:hidden">
+        <Tabs value="skills" className=" md:hidden fade-in">
             <TabsHeader className>
                 {data.map(({ label, value }) => (
                     <Tab key={value} value={value} className="px-2">

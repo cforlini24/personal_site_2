@@ -8,7 +8,10 @@ import {
     TabsBody,
     Tab,
     TabPanel,
-    Typography
+    Typography,
+    Card,
+    CardHeader,
+    CardBody
 } from "@material-tailwind/react";
 
 import { Fragment, useState } from "react";
@@ -41,10 +44,10 @@ const Resume = () => {
 
     const data= [
         {
-            label: "Technical Skills",
+            label: "Skills",
             value: "skills",
-            element: <Fragment>
-                <Accordion open={open == 1} icon={<Icon id={1} open={open} />}>
+            element: <Fragment >
+                <Accordion className="w-72" open={open == 1} icon={<Icon id={1} open={open} />}>
                     <AccordionHeader onClick={() => handleOpen(1)} >
                         Proficient
                     </AccordionHeader>
@@ -81,31 +84,61 @@ const Resume = () => {
                 </Accordion>
 
             </Fragment>
-            // desc:<div> 
-            //     <Typography variant="h3">Proficient</Typography>
-            //     <Typography>
-            //         JavaScript<br/>
-            //         React<br/>
-            //         Node<br/>
-            //         Express<br/>
-            //         SQL<br/>
-            //         PostgreSQL<br/>
-            //         HTML<br/>
-            //         CSS<br/>
-            //     </Typography>
-            //     <Typography variant="h3">Knowledgeable</Typography>
-            //     <Typography variant="h3">Familiar</Typography>
-            //     </div>
         }, 
         {
             label: "Education",
             value: "education",
-            element: "Edcuations"
+            element: 
+            <div className="w-72">
+                <Card color="transparent" shadow={false} className=" text-center">
+                    <CardHeader color="transparent"
+        floated={false}
+        shadow={false}
+        className="mx-0 items-center gap-4 pt-0 pb-4">
+                        <Typography variant="h5">
+                        Emory University Continuing Education 
+                        </Typography>
+                        <Typography variant="h6">Powered by Fullstack Academy</Typography>
+                    </CardHeader>     
+                    <CardBody className="mb-8 p-0">
+                    Certificate of  Web Development<br/>
+                     Jan 2024 - April 2023
+                    </CardBody>
+                </Card>
+                <Card color="transparent" shadow={false} className=" text-center">
+                    <CardHeader color="transparent"
+        floated={false}
+        shadow={false}
+        className="mx-0 items-center gap-4 pt-0 pb-4">
+                        <Typography variant="h5">
+                        University of Georgia 
+                        </Typography>
+                    </CardHeader>     
+                    <CardBody className="mb-6 p-0">
+                    Bachelors of Business Administration - Economics <br/>
+                    Aug 2017 - May 2022
+                    </CardBody>
+                </Card>
+            </div>
         },
         {
-            label: "Work Experience",
+            label: "Experience",
             value: "experience",
-            element: "Exp"
+            element: 
+            <Card className="w-72 mt-10">
+                <CardBody>
+                    <Typography variant="h3" className="text-center">The Wing Cafe & Tap House</Typography>
+                    <Typography variant='h5' className="text-center">Head Food Expeditor</Typography>
+                    <Typography variant='lead' className="text-center">
+                    Mar 2017 - Dec 2022
+                    </Typography>
+                    <Typography>
+                    Orchestrated food distribution in a 45 table fast-paced restaurant, serving upwards of 300 guests each night<br/>
+                    Led a team of two assistant expeditors to deliver high-quality service and great attention to detail, resulting in a 4.5+ rating of the restaurant on review sites.
+
+                    </Typography>
+                </CardBody>
+            </Card>
         }
     ]
 
@@ -128,9 +161,9 @@ const Resume = () => {
             </TabsBody>
         </Tabs>
         <Tabs value="skills" className=" md:hidden">
-            <TabsHeader>
+            <TabsHeader className>
                 {data.map(({ label, value }) => (
-                    <Tab key={value} value={value}>
+                    <Tab key={value} value={value} className="px-2">
                     {label}
                     </Tab>
                 ))}

@@ -144,7 +144,7 @@ const Resume = () => {
 
     return(
         <div className="flex items-center justify-center my-5 md:my-20 " >
-        <Tabs value="skills" orientation="vertical" className="hidden md:flex md:m-5 md:justify-around w-screen scale-in-hor-center">
+        <Tabs value="skills" orientation="vertical" className="hidden md:flex md:m-5 md:justify-around w-screen ">
             <TabsHeader className="items-center md:w-64 md:m-10">
                 {data.map(({ label, value }) => (
                     <Tab key={value} value={value} className="md:p-5">

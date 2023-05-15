@@ -23,18 +23,23 @@ const Main = () => {
                             Looking to start a new career in tech and finance
                         </Typography>
                         <Link to="/about-me">
-                        <Button className="bg-pink mx-3 my-5" >
+                        <Button className="bg-pink mx-3 my-5 w-1/3" >
                             About Me
                         </Button> 
                         </Link>
                         <Link to="/portfolio">
-                        <Button className="bg-pink mx-3">
+                        <Button className="bg-pink mx-3 w-1/3">
                              Portfolio 
                         </Button>
                         </Link>
                         <Link to="/resume">
-                        <Button className="bg-pink mx-3">
+                        <Button className="bg-pink mx-3 w-1/3">
                              Resume
+                        </Button>
+                        </Link>
+                        <Link to="/contact">
+                        <Button className="bg-pink mx-3 w-1/3">
+                             Contact
                         </Button>
                         </Link>
                     </CardBody>

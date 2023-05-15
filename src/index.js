@@ -1,7 +1,7 @@
 import { createRoot } from "react-dom/client"
 import { BrowserRouter,Route,Routes } from "react-router-dom";
 
-import {Bio, Footer, Portfolio, Main, Nav } from "./components";
+import {Bio, Footer, Portfolio, Main, Nav, Resume } from "./components";
 
 import { ThemeProvider } from "@material-tailwind/react";
 
@@ -19,6 +19,7 @@ const App = () => {
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/about-me" element={<Bio />} />
             <Route path="/*" render={() => <Main />}/>
+            <Route path="/resume" element={<Resume />} />
         </Routes>
         <Footer />
     </BrowserRouter>

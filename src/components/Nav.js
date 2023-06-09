@@ -25,7 +25,7 @@ const Nav = () => {
             </Link>
             <Link to="/contact" onClick={() => setOpenNav(false)} className="cursor-pointer">
             <Typography as="li" variant="small" className="p-1" >
-                Conact
+                Contact
             </Typography>
             </Link>
         </ul>
